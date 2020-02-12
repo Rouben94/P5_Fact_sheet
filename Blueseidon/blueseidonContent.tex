@@ -11,7 +11,7 @@
     Manuel Di Cerbo}
 
 \fssummary{
-    Irgend eine Einleitung die alle umhaut.}
+    In der vernetzten Welt von heute wird der Bedarf an drahtlosen Sensoren und Aktoren immer grösser und Lösungsansätze für deren Anbindung gibt es etliche. Bluetooth Mesh ist eine mögliche Lösung. Das Mesh Konzept beinhaltet, dass sich das Netzwerk mit jedem Knoten ausweitet ohne dies von zentraler Stelle zu steuern. Zudem ist Bluetooth bereits sehr weit verbreitet wodurch eine Anbindung sinnvoller und einfacher wird.}
 
 \fsgraphics{
     \begin{minipage}{0.5\textwidth}
@@ -26,7 +26,8 @@
 
 \fscontent{
     \section{Bluetooth Mesh}
-    In der heutigen Entwicklung ist der Bedarf an drahtlosen Sensoren und Aktoren gestiegen. In vielen Bereichen werden kleine unabhängige Systeme benötigt. Sei es in der Heimautomation (Lichtschalter, Temperaturfühler, etc.), der Industrie (Produktionserfassung, Lagerbewirtschaftung, etc.) oder der Landwirtschaft (Feuchtigkeitsmessung, Bewässerungssysteme, etc.). Es existieren diverse Lösungsansätze solche Wireless Sensor Networks (WSN) zu realisieren. Eine Möglichkeit ist das Vernetzen der Geräte über das weit verbreitet Bluetooth Protokoll. Dazu wurde im Jahr 2017 der Bluetooth Mesh Standard vorgestellt in welchem Knoten ein MeshNetzwerk bilden. Mesh-Netzwerke haben die Eigenschaft die Abdeckung mit jedem zusätzlichen Knoten zu erweitern indem sie die Daten jeweils vom einen zum anderen Knoten weiterleiten.
+    Der von der \textit{Bluetooth SIG (Special Interest Group)} veröffentlichte \textit{Bluetooth Mesh Standard} ermöglicht es, Netzwerkteilnehmer zu einem stark vermaschten Netz zusammenzufassen. Man spricht von einer m:m (many to many)
+Topologie. Dies bedeutet das jeder Teilnehmer mit Jedem kommunizieren kann. Der Standard basiert auf \textit{Bluetooth Low Energy (BLE)} und ist somit mit allen Geräten kompatibel die BLE unterstützen. Dies macht \textit{Bluetooth Mesh} zu einem der zurzeit interessantesten Mesh Standards.
 
     \section{Blueseidon Mesh}
   	In diesem Projekt ist ein eine \textit{Bluetooth Mesh Plattform} entstanden, die es ermöglicht ein Bluetooth Mesh Netzwerk vereinfacht aufzubauen und zu konfigurieren. Die Plattform bietet dem Endanwender die Möglichkeit eine beliebige Anzahl Knoten einzubinden und diese je nach Anwendung zu konfigurieren. Die einzelnen Knoten sind dabei universell gestaltet, sodass beliebige Hardware damit bedient werden kann. Jeder Node kann als Sensor oder Aktor mit analoger oder digitaler Peripherie eingesetzt werden.
