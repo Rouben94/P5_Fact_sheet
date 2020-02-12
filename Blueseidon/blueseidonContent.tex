@@ -20,20 +20,25 @@
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
         \includegraphics[height=60mm]{images/Grobkonzept_Schema.PNG}
-        %\graphicscaption{Steuerungsprint}
+        %\graphicscaption{Grobkonzept}
     \end{minipage}
 }
 
 \fscontent{
-    \section{Wireless}
+    \section{Bluetooth Mesh}
     In der heutigen Entwicklung ist der Bedarf an drahtlosen Sensoren und Aktoren gestiegen. In vielen Bereichen werden kleine unabhängige Systeme benötigt. Sei es in der Heimautomation (Lichtschalter, Temperaturfühler, etc.), der Industrie (Produktionserfassung, Lagerbewirtschaftung, etc.) oder der Landwirtschaft (Feuchtigkeitsmessung, Bewässerungssysteme, etc.). Es existieren diverse Lösungsansätze solche Wireless Sensor Networks (WSN) zu realisieren. Eine Möglichkeit ist das Vernetzen der Geräte über das weit verbreitet Bluetooth Protokoll. Dazu wurde im Jahr 2017 der Bluetooth Mesh Standard vorgestellt in welchem Knoten ein MeshNetzwerk bilden. Mesh-Netzwerke haben die Eigenschaft die Abdeckung mit jedem zusätzlichen Knoten zu erweitern indem sie die Daten jeweils vom einen zum anderen Knoten weiterleiten.
 
-    \section{Blueseidon}
-  	Ziel dieses Projektes ist es, eine \textit{Bluetooth Mesh Plattform} zu entwickeln, die es ermöglicht ein Netzwerk vereinfacht aufzubauen und zu konfigurieren. Die Plattform soll dem Endanwender die Möglichkeit bieten eine beliebige Anzahl Knoten einzubinden und diese je nach Anwendung zu konfigurieren. Ein weiteres Ziel dieses Projektes ist es die Bluetooth Mesh Knoten möglichst netzunabhängig zu betreiben. Dazu soll sogenanntes Energy Harvesting eingesetzt werden. Energy Harvesting steht als Überbegriff für die Energiegewinnung aus der Umgebung, wozu beispielsweise Solarenergie, Vibrationsenergie, Thermische Energie aber auch die Energie von Elektromagnetischen Wellen zählt. 
+    \section{Blueseidon Mesh}
+  	In diesem Projekt ist ein eine \textit{Bluetooth Mesh Plattform} entstanden, die es ermöglicht ein Bluetooth Mesh Netzwerk vereinfacht aufzubauen und zu konfigurieren. Die Plattform bietet dem Endanwender die Möglichkeit eine beliebige Anzahl Knoten einzubinden und diese je nach Anwendung zu konfigurieren. Die einzelnen Knoten sind dabei universell gestaltet, sodass beliebige Hardware damit bedient werden kann. Jeder Node kann als Sensor oder Aktor mit analoger oder digitaler Peripherie eingesetzt werden.
+  	
+  	\section{Energy Harvesting}
+	Ein Ziel dieses Projektes ist es die Bluetooth Mesh Knoten möglichst netzunabhängig zu betreiben. Dazu sollte sogenanntes Energy Harvesting eingesetzt werden. Energy Harvesting steht als Überbegriff für die Energiegewinnung aus der Umgebung, wozu beispielsweise Solarenergie, Vibrationsenergie, Thermische Energie aber auch die Energie von Elektromagnetischen Wellen zählt. Um für jede Anwendung die passende Energy-Harvesting Methode zu evaluieren wurde ein Machbarkeitsstudie durchgeführt. Darin hat sich gezeigt, dass der Einsatz solcher Methoden tatsächlich möglich wäre, wobei allerdings die Bedingungen oft beinahe ideal sein müssten. Einzig die Solarenergie könnte wohl verbreitet eingesetzt werden.
 
-    \section{Node-Red (Bedienung?)}
-	Evtl Node-Red beschreiben? \\
-   \\
+    \section{Node-Red Dashboard}
+    Um dem Benutzer eine einfache und praktikable Bedienoberfläche zu bieten wird eine \textit{Node-Red} Dashboard eingesetzt. \textit{Node-Red} basiert auf \textit{JSON} und \textit{Java-Script} und läuft auf einem \textit{Raspberry-Pi} Minicomputer welcher künftig auch als Gateway eingesetzt werden soll. Zusammen mit eine \textit{Python} Script und dem \textit{nRF52840 Development Kit} als Hardwareschnittstelle wird der Raspberry-Pi zu einem Bluetooth Mesh Knoten und kann das Netz verwalten und steuern.\\
+
+
+
    \begin{minipage}{0.6\textwidth}
    	\includegraphics[height=25mm]{images/nRF52840_Dongle.png}
    \end{minipage}
@@ -44,6 +49,7 @@
     \setlength\tabcolsep{2pt}
    	\begin{itemize}
    	\item nRF52840
-   	\item ...
+   	\item Bluetooth Mesh
+   	\item Node-Red
 	\end{itemize}
 }
